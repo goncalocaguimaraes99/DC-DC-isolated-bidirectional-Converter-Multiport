@@ -305,7 +305,7 @@ void loop() {
   }
 }
 
-// ── LIGAÇÕES ST7735 ───────────────────────────────────────────────────────
+// Connections to ST7735 ───────────────────────────────────────────────────────
 //
 //  ST7735      ESP32-C3 Mini
 //  VCC    ──►  3.3V
@@ -315,11 +315,4 @@ void loop() {
 //  RES    ──►  GPIO10 (TFT_RST)
 //  DC     ──►  GPIO6  (TFT_DC)
 //  CS     ──►  GPIO7  (TFT_CS)
-//  BL     ──►  3.3V   (backlight sempre ligado)
-//
-// Instala no Arduino IDE (Library Manager):
-//   "Adafruit ST7735 and ST7789 Library"
-//   "Adafruit GFX Library"
-//
-// Se o ecrã aparecer com cores invertidas, muda initR para INITR_GREENTAB.
-// Se o layout aparecer rotacionado, ajusta setRotation(0..3).
+//  BL     ──►  3.3V   (backlight)
